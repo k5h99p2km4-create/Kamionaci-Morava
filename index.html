@@ -24,7 +24,7 @@ footer{background:#080808;color:#fff;padding:42px 0}.footer-grid{display:flex;ju
 <div class="top">🔥 KAMIOŇÁCI MORAVA &nbsp; • &nbsp; JEDNA KREV, JEDNA RODINA! ❤️🚛</div>
 <header><div class="wrap nav"><a class="brand" href="#top"><div class="badge">KM</div><div>KAMIOŇÁCI MORAVA<small>OFICIÁLNÍ E-SHOP</small></div></a><nav class="links"><a href="#produkty">Produkty</a><a href="#info">Informace</a><a href="#kontakt">Kontakt</a></nav><button class="cart" onclick="openCart()">🛒 Košík <span id="count">0</span></button></div></header>
 <main id="top">
-<section class="hero"><div class="wrap hero-grid"><div><div class="kicker">Oficiální merch</div><h1>STYL PRO<br><span>KAŽDÉHO</span><br>KAMIOŇÁKA.</h1><p>Samolepky, vůně a drobnosti s motivy Kamioňáci Morava. Vyber si svůj motiv a ukaž, že máš styl. 😎</p><a class="cta" href="#produkty">Prohlédnout nabídku ↓</a></div><div class="hero-art"><img src="assets/vune.jpg" alt="Produkty Kamioňáci Morava"></div></div></section>
+<section class="hero"><div class="wrap hero-grid"><div><div class="kicker">Oficiální merch</div><h1>STYL PRO<br><span>KAŽDÉHO</span><br>KAMIOŇÁKA.</h1><p>Samolepky, vůně a drobnosti s motivy Kamioňáci Morava. Vyber si svůj motiv a ukaž, že máš styl. 😎</p><a class="cta" href="#produkty">Prohlédnout nabídku ↓</a></div><div class="hero-art"><img src="vune.jpg" alt="Produkty Kamioňáci Morava"></div></div></section>
 <section id="produkty"><div class="wrap"><div class="section-head"><div><h2>Produkty</h2><p>Vyber, co ti nesmí chybět v kamionu, autě ani doma.</p></div></div><div class="grid" id="products"></div></div></section>
 <section class="info" id="info"><div class="wrap"><div class="info-grid"><div class="info-card"><b>🚛 Pro kamioňáky</b><p>Originální motivy a drobnosti pro členy i fanoušky Kamioňáci Morava.</p></div><div class="info-card"><b>📦 Objednávka jednoduše</b><p>Vyber produkty do košíku a odešli objednávku. Poté se domluvíme na doručení a platbě.</p></div><div class="info-card"><b>❤️ Jedna krev, jedna rodina</b><p>Merch vzniká pro naši komunitu a lidi, kteří žijí silnicí.</p></div></div></div></section>
 </main>
@@ -33,15 +33,15 @@ footer{background:#080808;color:#fff;padding:42px 0}.footer-grid{display:flex;ju
 <div class="modal" id="checkoutModal"><div class="modal-box"><h2>Dokončení objednávky</h2><div class="form"><input id="name" placeholder="Jméno a příjmení *"><input id="email" type="email" placeholder="E-mail *"><input id="phone" placeholder="Telefon"><input id="address" placeholder="Adresa / výdejní místo *"><textarea id="message" placeholder="Poznámka k objednávce"></textarea><div class="form-actions"><button class="secondary" onclick="closeCheckout()">Zpět</button><button class="primary" onclick="sendOrder()">Odeslat objednávku</button></div></div></div></div>
 <script>
 const products=[
-{id:1,name:'Propiska Kamioňáci Morava',price:20,img:'assets/propisky.jpg',tag:'DOPLNĚK',desc:'Praktická propiska s motivem Kamioňáci Morava.'},
-{id:2,name:'Samolepka „Na tohle Vám, víte co!“',price:45,img:'assets/samolepka-viteco.jpg',tag:'SAMOLEPKA',desc:'Stylová kulatá samolepka pro kamion i osobák.'},
-{id:3,name:'Samolepka TEAM TALMU FOREVER',price:55,img:'assets/talmu-forever.jpg',tag:'NOVINKA',desc:'Horká novinka z kolekce samolepek.'},
-{id:4,name:"Samolepka IT'S A GAME",price:55,img:'assets/its-a-game.jpg',tag:'NOVINKA',desc:'Motiv pro ty, kteří vědí, že je to hra.'},
-{id:5,name:'Samolepka NO INSID',price:55,img:'assets/no-insid.jpg',tag:'NOVINKA',desc:'Další motiv z nové série samolepek.'},
-{id:6,name:'Samolepka NO BALM, NO MONEY!',price:55,img:'assets/no-balm.jpg',tag:'NOVINKA',desc:'Nový výrazný motiv pro tvoje auto nebo kamion.'},
-{id:7,name:'Závěsná vůně — Kamioňáci Morava',price:45,img:'assets/vune.jpg',tag:'VŮNĚ',desc:'Závěsná vůně pro kamion nebo osobní auto. Členská cena dle původní nabídky.'},
-{id:8,name:'Závěsná vůně — limitovaná edice',price:60,img:'assets/vune.jpg',tag:'LIMITOVANÁ EDICE',desc:'Limitovaná edice závěsné vůně.'},
-{id:9,name:'Samolepka District — motiv',price:null,img:'assets/district.jpg',tag:'NOVINKA',desc:'Motiv ze série „Vyber si svůj motiv“. Cena v původním příspěvku nebyla uvedena.'}
+{id:1,name:'Propiska Kamioňáci Morava',price:20,img:'propisky.jpg',tag:'DOPLNĚK',desc:'Praktická propiska s motivem Kamioňáci Morava.'},
+{id:2,name:'Samolepka „Na tohle Vám, víte co!“',price:45,img:'samolepka-viteco.jpg',tag:'SAMOLEPKA',desc:'Stylová kulatá samolepka pro kamion i osobák.'},
+{id:3,name:'Samolepka TEAM TALMU FOREVER',price:55,img:'talmu-forever.jpg',tag:'NOVINKA',desc:'Horká novinka z kolekce samolepek.'},
+{id:4,name:"Samolepka IT'S A GAME",price:55,img:'its-a-game.jpg',tag:'NOVINKA',desc:'Motiv pro ty, kteří vědí, že je to hra.'},
+{id:5,name:'Samolepka NO INSID',price:55,img:'no-insid.jpg',tag:'NOVINKA',desc:'Další motiv z nové série samolepek.'},
+{id:6,name:'Samolepka NO BALM, NO MONEY!',price:55,img:'no-balm.jpg',tag:'NOVINKA',desc:'Nový výrazný motiv pro tvoje auto nebo kamion.'},
+{id:7,name:'Závěsná vůně — Kamioňáci Morava',price:45,img:'vune.jpg',tag:'VŮNĚ',desc:'Závěsná vůně pro kamion nebo osobní auto. Členská cena dle původní nabídky.'},
+{id:8,name:'Závěsná vůně — limitovaná edice',price:60,img:'vune.jpg',tag:'LIMITOVANÁ EDICE',desc:'Limitovaná edice závěsné vůně.'},
+{id:9,name:'Samolepka District — motiv',price:null,img:'district.jpg',tag:'NOVINKA',desc:'Motiv ze série „Vyber si svůj motiv“. Cena v původním příspěvku nebyla uvedena.'}
 ];
 let cart=JSON.parse(localStorage.getItem('km_cart')||'{}');
 function money(n){return n.toLocaleString('cs-CZ')+' Kč'}
